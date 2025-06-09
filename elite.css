@@ -1,0 +1,669 @@
+ 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ body{
+  background-image: url(./assets/index-bg.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+ }
+ 
+ 
+ 
+ 
+ .navbar{
+  width: 99%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.753);
+  box-shadow: 0px 3px 10px 0px gray;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+
+
+
+ 
+}
+
+.navbar-left{
+    width:25%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow:row nowrap ;
+    justify-content: space-between;
+    align-items:center;
+    h1{
+        width: 80%;
+        text-align: center;
+    }
+}
+ .navbar-right{
+    width: 50%;
+    /* border: 1px solid green; */
+    display: flex;
+
+    ul{
+        
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    li{
+        a{
+            font-size: 20px; 
+             z-index: 1;
+            transition-duration: all 9s ease-in;
+        }
+
+        a:hover{
+          color: black;
+         
+            transform: scale(1.5);
+
+        }
+    }
+
+
+    a{
+        text-decoration: none;
+        color: gray;
+        
+    }
+ }
+
+
+
+ #hero{
+    color: black;
+    width: 70%;
+    height: 350px;
+    margin: 70px 200px;
+    padding: 40px;
+   background: radial-gradient(
+    circle,
+    rgb(212, 212, 212),
+    rgba(72, 72, 72, 0.731));
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    h2{
+        text-align: center;
+        padding: 40px;
+        font-size: 35px;
+    }
+
+    p{
+        text-align: center;
+        
+    }
+ }
+
+ #hero:hover{
+  letter-spacing: 3px;
+  transition-duration: 400ms;
+
+ }
+
+ 
+
+ 
+
+ /* #hero1:hover{
+   letter-spacing: 5px;
+  transition-duration: 200ms;
+ }  */
+
+  #parent{
+
+  color: black;
+    width: 70%;
+    height: 350px;
+    margin: 70px 200px;
+    padding: 40px;
+   background-image: url(./assets/aboutus-img.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  
+
+
+ #about{
+  width: 40%;
+  margin: 15px;
+  padding:10px;
+  text-align: center;
+  color: black;
+  background-color: rgba(133, 133, 133, 0.12);
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  transition-duration: 400ms;
+
+
+    h2{
+         text-align: center;
+        
+       
+        font-size: 35px;
+    }
+
+    p{
+        text-align: center;
+        text-align: justify;
+    }
+
+ }
+
+
+ #about:hover{   
+ background-color: rgba(133, 133, 133, 0.12);
+transition-duration: 400ms;
+ transform: scale(1.1);
+ }
+
+
+
+ .parent1{
+    color: black;
+    width: 70%;
+    height: 950px;
+    margin: 70px 200px;
+    padding: 40px;
+   background-image: url(./assets/ourpurpose4.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-size: cover;
+
+    
+ }
+
+ 
+
+ 
+
+
+
+#h2 {
+  color: white;
+  margin: 0 0 10px 0;
+  /* display: block; Ensures it behaves like a block element */
+  width: 100%;
+  
+  text-align: center;
+  box-sizing: border-box;
+  
+
+}
+
+#h2:hover{
+  letter-spacing: 8px;
+}
+
+ .child{
+
+
+    background-color: rgba(255, 255, 255, 0.598);
+    backdrop-filter: blur(2px);
+    border: 1px solid gray;
+    margin: 0px;
+    padding: 20px;
+    margin-top: 140px;
+    width: 410px;
+    height: 250px;
+
+
+    h2{
+       
+         text-align: center;
+        
+
+    }
+    p{
+        text-align: center;
+        text-align: justify;
+    }
+    
+ }
+
+
+ .child:hover{
+transition-duration: 400ms;
+ transform: scale(1.1);
+
+ }
+
+
+  /* #scroll-container1, */
+#scroll-container2,
+#scroll-container3 {
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  padding: 20px 0;
+  margin: 0px;
+  border-radius: 8px; 
+} 
+/* #scroll-container1 {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#scroll-container2 {
+  border-radius: 0px;
+}
+#scroll-container3 {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-bottom: 20px;
+} */
+
+/* The scrolling container */
+.scrolling-images {
+  display: flex;
+  width: max-content;
+ 
+}
+
+
+.scrolling-images img {
+  width: 200px; /* Adjust image width */
+  height: 80px;
+  margin: 0 10px; /* Space between images */
+  border-radius: 10px;
+  
+  object-fit: contain;
+}
+
+#tech-png{
+  background-color: gray;
+  width: 70%;
+  margin: 70px 200px;
+  padding: 40px;
+}
+
+
+
+
+#parent2{
+    color: black;
+
+    width: 70%;
+    height: 960px;
+    margin: 70px 200px;
+    padding: 40px;
+    background-color: rgba(128, 128, 128, 0.674);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+
+    
+  h2{
+       
+         text-align: center;
+
+    }
+    p{
+        text-align: center;
+        text-align: justify;
+    }
+    
+ }
+
+
+ #h2-1{
+  margin: 0 0 10px 0;
+  display: block; /* Ensures it behaves like a block element */
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  
+  
+ 
+
+}
+#h2-1:hover{
+  letter-spacing: 8px;
+}
+
+ .child2{
+
+    border: 1px solid gray;
+    background-color: white;
+    
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 140px;
+    width: 410px;
+    height: 250px;
+    
+ }
+   
+
+ .child2:hover{
+    background-color: white;
+    backdrop-filter: blur(2px);
+    border: 1px solid gray;
+    transition-duration: 400ms;
+    transform: scale(1.1);
+
+ }
+
+
+ /*form css*/
+ #form{
+  background-color: rgba(249, 249, 249, 0.352);
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+ }
+
+ #form h2{
+  text-align: center;
+  font-family: Dosis;
+  font-size: 45px;
+  color: whitesmoke;
+ }
+ #form p{
+  text-align: center;
+  font-family: Dosis;
+  font-size: 25px;
+  color: whitesmoke;
+  
+ }
+ #form p:hover{
+  color: black;
+  letter-spacing: 4px;
+ }
+ #form h2:hover{
+  color: black;
+  letter-spacing: 5px;
+ }
+
+ #form-body {
+  width: 80%; /* Pehle 50% tha */
+  max-width: 600px; /* Taaki bada screen pe bhi limit ho */
+  padding: 20px;
+  margin: 20px 33.5%; /* Yeh center karega without overflow */
+  transition-property: background-color;
+  transition-duration: 500ms;
+ }
+/* 
+ #form-body:hover {
+  background-color: rgba(249, 249, 249, 0.452);
+} */
+
+#form-body table {
+  width: 100%;
+  border-spacing: 10px;
+}
+
+/* Input fields styling */
+#form-body input[type="text"],
+#form-body input[type="number"],
+#form-body input[type="mail"],
+#form-body input[type="file"],
+#form-body select {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Placeholder text color */
+#form-body input::placeholder {
+  color: #999;
+}
+
+/* Select dropdown styling */
+#form-body select {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Label and file input styling */
+#form-body label p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Button styling */
+#form-body .btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-right: 170px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#form-body .btn:hover{
+  transform: scale(1.1) rotate(360deg);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1.9);
+}
+
+/* Table row styling for spacing between form elements */
+#form-body tr {
+  margin-bottom: 15px;
+}
+
+
+
+/* Aadress  */
+
+
+
+#contactofsocialmedia{
+  width: 70%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.342);
+  padding: 5px 25px 5px 25px; 
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+
+
+
+
+ 
+
+
+/* #contactus {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.342);
+  padding: 5px 25px 5px 25px; 
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+ 
+} */
+
+#contactus-contents {
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+#contactus-address {
+  width: 25%;
+  font-size: 20px;
+  color: white;
+  
+
+}
+#contactus-address h2 {
+  margin: 0px;
+  
+}
+#contactus-address p {
+  margin: 0px;
+}
+
+
+/* Social Media 
+
+
+#social-media{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  float: left;
+
+}
+
+
+#Find-Us-On{
+  color: white;
+  float: right;
+}
+
+#social-media1{
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  
+  /* text-shadow: 0px 0px 5px rgb(78, 78, 79); 
+
+}
+#social-logos{
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.logos{
+  width: 40px;
+  height: 40px;
+}  */
+
+/* Parent wrapper to hold both address and social media side-by-side */
+
+
+
+
+
+#add-social-contact{
+ width: 70%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.342);
+  padding: 5px 25px 5px 25px; 
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+
+#footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+}
+
+/* Address block */
+#address-section {
+  color: white;
+  font-size: 18px;
+  max-width: 40%;
+}
+
+#address-section:hover{
+   color: black;
+  letter-spacing: 2px;
+  transition-duration: 400ms;
+
+}
+
+/* Social media block */
+#social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 40%;
+}
+
+#Find-Us-On {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: right;
+  margin-right: 30%;
+}
+
+#Find-Us-On:hover{
+  color: black;
+  letter-spacing: 2px;
+  transition-duration: 400ms;
+}
+
+#social-logos {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+
+.logos {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logos:hover {
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1.9);
+}
+ 
+  .copyright{
+    width: 98%;
+    padding: 15px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    background-color:black;
+    font-size: 18px;
+    }
+ 
