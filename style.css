@@ -1,14 +1,4 @@
- 
-
-
-
-
- 
- 
- 
- 
- 
- body{
+  body{
   background-image: url(./assets/index-bg.jpeg);
   background-size: cover;
   background-attachment: fixed;
@@ -124,10 +114,7 @@
 
  
 
- /* #hero1:hover{
-   letter-spacing: 5px;
-  transition-duration: 200ms;
- }  */
+
 
   #parent{
 
