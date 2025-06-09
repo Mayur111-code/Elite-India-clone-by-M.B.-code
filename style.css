@@ -595,9 +595,12 @@ transition-duration: 400ms;
 }
 
 #address-section:hover{
+   padding: 10px;
    color: black;
-  letter-spacing: 2px;
-  transition-duration: 400ms;
+   background-color: gray;
+   border-radius: 10px;
+   transform: scale(1.1) rotate(360deg);
+   box-shadow: 0 0 10px rgba(255, 255, 255, 1.9);
 
 }
 
